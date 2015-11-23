@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>フロントページ</title>
+
+  <!-- META -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0, user-scalable=no">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    function GetClock(){
+    var d=new Date();
+    var nhour=d.getHours(),nmin=d.getMinutes();
+    if(nmin<=9) nmin="0"+nmin
+
+    document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+"";
+    }
+
+    window.onload=function(){
+    GetClock();
+    setInterval(GetClock,1000);
+    }
+  </script>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+    @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic);
+
+    * {
+      font-family: 'Roboto';
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      background: url('bg15.jpg');
+      background-position: bottom bottom;
+      background-size: 100%;
+    }
+
+    .main {
+      width: 68%;
+      height: 50%;
+      left: 18%;
+      position: absolute;
+      top: 25%;
+    }
+
+    .wrapper {
+      float: left;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around;
+      height: 280px;
+      width: 262px;
+      margin: 20px;
+      margin-bottom: 80px;
+    }
+
+    .header {
+      text-align: center;
+      border-top: 5px solid rgba(159,23,73,0.1);
+      border-right: 5px solid rgba(159,23,73,0.1);
+      border-left: 5px solid rgba(159,23,73,0.1);
+      width: 100%;
+      height: 55px;
+      line-height: 54px;
+      background: rgba(228,231,236,0.6);
+      font-weight: 900;
+      margin: 0;
+      color: #DF2353;
+      font-size: 28px;
+      font-family: 'Noto Sans', sans-serif;
+      margin-bottom: -15px;
+    }
+
+    ul {
+      width: 100%;
+      background: rgba(42,54,59, 0.6);
+      border: 5px solid rgba(159,23,73,0.1);
+      float: left;
+      padding: 20px 0px 20px 0px;
+    }
+
+    li {
+      padding: 10px;
+      color: #ccc;
+      font-size: 22px;
+      text-align: center;
+      font-weight: 300;
+      list-style: none;
+    }
+
+    li a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    li a:hover {
+      color: #F1C1CF;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .ani {
+      width: 130px;
+      height: 130px;
+      border: 5px solid #fff;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: url('ani5.jpg');
+      background-position: center center;
+      background-size: 110% 110%;
+    }
+
+    #clockbox {
+      position: absolute;
+      text-align: center;
+      width: 320px;
+      margin: auto;
+      top: 1;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding-bottom: 30px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="main">
+    <div class="child">
+      <div class="wrapper">
+        <div class="header">タイム</div>
+        <ul>
+          <li><a href="https://boards.4chan.org/g/" target="_blank">/g/</a> <a href="https://boards.4chan.org/gd/" target="_blank">/gd/</a> <a href="https://boards.4chan.org/biz/" target="_blank">/biz/</a></li>
+          <li><a href="https://facebook.com" target="_blank">フェイスブック</a></li>
+          <li><a href="https://reddit.com" target="_blank">Redditに</a></li>
+          <li><a href="https://youtube.com" target="_blank">ユーチューブ</a></li>
+          <li><a href="https://twitch.tv/directory/following" target="_blank">けいれん</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="header">ワーク</div>
+        <ul>
+          <li><a href="https://github.com" target="_blank">Githubの</a></li>
+          <li><a href="http://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com" target="_blank">CSS トリック</a></li>
+          <li><a href="http://machdudas.de" target="_blank">ジョブズ</a></li>
+          <li><a href="https://one.com" target="_blank">一つ</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="header">ツール</div>
+        <ul>
+          <li><a href="https://todoist.com" target="_blank">Todoist</a></li>
+          <li><a href="https://trello.com" target="_blank">Trello</a></li>
+          <li><a href="https://kat.cr" target="_blank">やっつける</a></li>
+          <li><a href="https://gmail.com" target="_blank">Gmailの</a></li>
+          <li><a href="https://translate.google.com" target="_blank">トランスレーション
+</a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="header">タイム</div>
+        <ul>
+          <li><a href="https://twitter.com" target="_blank">ツイッター</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a href="https://behance.net" target="_blank">Béhance</a></li>
+          <li><a href="https://xing.com" target="_blank">XING</a></li>
+          <li><a href="https://www.facebook.com/jenslettkemann" target="_blank">Fb page</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--<a href="http://www.8bitdash.com/" target="_blank"><div class="ani"></div></a>-->
+
+  <div id="clockbox" style="font:38pt Roboto; color:#b07350;"></div>
+
+</body>
+</html>
