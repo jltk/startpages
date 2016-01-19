@@ -1,6 +1,6 @@
 # Startpages 
 
-My browser startpages. CSS and JS/jQuery is included in one HTML file.
+My browser startpages. CSS and JS/jQuery are all included in one HTML file each.
 
 ### Startpage Boxes
 
