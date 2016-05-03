@@ -1,5 +1,5 @@
 <!-- Save this HTML file and set it as your browser startpage e.g. -->
-<!-- This page isn't responsive at all and looks bad in most window sizes but I will update it soon -->
+<!-- This page is relatively reponsive now for most view sizes, using flexbox -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,19 +52,34 @@
       top: 25%;
     }
 
-    .wrapper {
-      float: left;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
+    .child {
       display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-      justify-content: space-around;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    }
+
+    .wrapper {
+      -webkit-flex: 1 0 15%;
+    flex: 1 0 15%;
       height: 280px;
       width: 262px;
       margin: 20px;
       margin-bottom: 80px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .wrapper {
+        -webkit-flex: 1 0 30%;
+        flex: 1 0 30%;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .wrapper {
+        -webkit-flex: 1 0 50%;
+        flex: 1 0 50%;
+      }
     }
 
     .header {
@@ -72,14 +87,13 @@
       border-top: 5px solid rgba(159,23,73,0.1);
       border-right: 5px solid rgba(159,23,73,0.1);
       border-left: 5px solid rgba(159,23,73,0.1);
-      width: 100%;
       height: 55px;
       line-height: 54px;
       background: rgba(228,231,236,0.6); //* BOX HEADER BACKGROUND *//
       font-weight: 900;
       margin: 0;
       color: #DF2353;
-      font-size: 28px;
+      font-size: 24px;
       font-family: 'Noto Sans', sans-serif;
       margin-bottom: -15px;
     }
@@ -115,15 +129,19 @@
     #clockbox {
       position: absolute;
       text-align: center;
-      width: 320px;
-      margin: auto;
-      top: 1;
+      top: 90%;
       left: 0;
       bottom: 0;
       right: 0;
-      padding-bottom: 30px;
-      font:38pt Roboto;
+      font-size: 48px;
       color:#E4E7EC; //* CLOCK FONT COLOR *//
+    }
+
+    @media only screen and (max-width: 900px) {
+      #clockbox {
+        top: 0;
+        margin-top: 40px;
+      }
     }
   </style>
 
