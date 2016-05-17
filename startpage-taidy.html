@@ -1,9 +1,12 @@
+<!--
+	The box has a fixed size so far, but is somewhat responsive. Although if you wanna add more link columns, you'll need to adjust the box widths appropiatly.
+-->
 <!DOCTYPE html>
 <html>
 
 <head>
 	<title>
-		Hallo もしもし Shalom Hola สวัสดครับี Salut Salam Halo 안녕하세요
+		Frontpage 🍙
 	</title>
 
 	<!--
@@ -23,17 +26,34 @@
 
 	<!-- META -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<style>
 		@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+		@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 		body {
 			background: #FB7D79;
 			font-family: 'Roboto';
-			color: white;}
+			color: white;
+			}
+		body::after {
+			content: "";
+			background: url('http://i.imgur.com/StzzYPF.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0.12;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: -1;
+		}
 		h1 {
-			font-size: 3.5em;
-			font-weight: 100;
+			font-size: 3.4em;
+			font-weight: 200;
+			font-family: 'Noto Sans Japanese', serif;
 			text-align: center;
 			margin: 0;
 			margin-top: 20px;
@@ -78,7 +98,20 @@
 			bottom: 0;
 			height: 500px;
 			border: 1px solid rgba(255,255,255,0.41);
-			background: rgba(255,255,255,0.05);}
+			background: rgba(255,255,255,0.11);}
+		@media only screen and (max-width: 840px) {
+			.wrapper {
+				width: 462px;
+				height: 785px;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			body::after {
+				background: url('http://i.imgur.com/dI1EURb.jpg');
+				background-size: 100% 100%;
+				height: 800px;
+		}
+		}
 	</style>
 
 </head>
@@ -86,7 +119,7 @@
 	
 	<div class="main">
 		<div class="wrapper">
-			<h1>안녕하세요</h1>
+			<h1>猿も木から落ちる。</h1>
 			<div class="box">
 				<ul>
 					<li><h2>Information</h2></li>
@@ -109,12 +142,12 @@
 					<li><h2>Tools</h2></li>
 					<li><a href="https://github.com" target="_blank">GitHub</a></li>
 					<li><a href="https://behance.net/" target="_blank">Behancé</a></li>
+					<li><a href="https://gmail.com/" target="_blank">Gmail</a></li>
 					<li><a href="https://calendar.google.com/calendar/render#main_7" target="_blank">Calendar</a></li>
+					<li><a href="https://www.duolingo.com/" target="_blank">Duolingo</a></li>
 					<li><h2>Webdev</h2></li>
-					<li><a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVG Compression</a></li>
-					<li><a href="http://howtocenterincss.com/" target="_blank">CSS Center</a></li>
 					<li><a href="http://caniuse.com/" target="_blank">Can I Use</a></li>
-					
+					<li><a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVG Compression</a></li>
 				</ul>
 				<ul>
 				<li><h2>Social Media</h2></li>
@@ -124,10 +157,10 @@
 					<li><h2>Entertainment</h2></li>
 					<li><a href="https://www.twitch.tv/directory/game/Creative/all" target="_blank">Twitch.tv</a></li>
 					<li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-					<li></li>
-					
+					<li><a href="http://www.colourlovers.com/" target="_blank">Colourlovers</a></li>
 				</ul>
 			</div>
+
 		</div>
 	</div>
 
