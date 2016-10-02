@@ -1,11 +1,11 @@
 # Startpages 
 
-My browser startpages. CSS and JS/jQuery are all included in one HTML file each.
+My browser startpages. CSS and JS are all included in one HTML file each.
 
 ### Startpage Too Simple
 
 <img src="https://i.imgur.com/665iQHN.jpg" border="0" />
-— <a href="https://i.imgur.com/L4jWBu7.jpg" target="_blank">Wallpaper</a>
+— <a href="https://i.imgur.com/LmgkQOe.jpg" target="_blank">Wallpaper</a>
 
 ### Startpage Taidy
 
