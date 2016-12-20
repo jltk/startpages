@@ -3,10 +3,10 @@
 		Using http://fontawesome.io/ for Icons
 
 		To display the icons you need to download Font Awesome from http://fontawesome.io/
-		Copy the folders 'css' and 'fonts' from the font-awesome-4.x.x folder
+		Copy the folders 'css' and 'fonts' from the font-awesome-x.x.x folder
 		in the same directory as this file (startpage-toosimple.html).
 
-		Find more icons you can use with it at http://fontawesome.io/icons/#brand
+		Find more icons you can use at http://fontawesome.io/icons/#brand
 
 -->
 
@@ -41,27 +41,36 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<style>
-	html {
-		height:100%;
+	html, body {
+		width: 100%;
+		min-height: 100vh;
+		margin: 0;
+		padding: 0;
 	}
 	body {
 		font-family: 'Lato', sans-serif;
 		font-weight: 700;
 		color: #333;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background-image: linear-gradient(70deg, rgba(53,60,88,.75), rgba(55,191,141,.75)), url('https://i.imgur.com/L4jWBu7.jpg');
 		/* background-size: cover; */ /* To display wallpaper at full screen size */
 	}
 	h2 {
 		color: rgba(53,60,88, 0.3);
+		margin: 0 0 16px 0;
 	}
 	ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		min-width: 435px;
 	}
 	li {
 		display: inline-block;
 		padding: 4px;
+		margin: 0 0 20px 0;
 	}
 	a {
 		color: #353C58;
@@ -81,40 +90,43 @@
 <body>
 <div style="display:flex; justify-content:center; align-items:center;">
   <div class="wrapper">
-    <h2>News</h2>
+    <h2>news</h2>
     <ul>
       <a href="https://news.ycombinator.com/"><li><i class="fa fa-y-combinator" aria-hidden="true"></i> Hacker News</li></a>
       <a href="https://reddit.com/"><li><i class="fa fa-reddit" aria-hidden="true"></i> Reddit</li></a>
+			<a href="https://dribbble.com/"><li><i class="fa fa-dribbble" aria-hidden="true"></i> Dribbble</li></a>
     </ul>
-    <h2>Orga</h2>
+    <h2>orga</h2>
     <ul>
       <a href="https://calendar.google.com/calendar/render#main_7"><li><i class="fa fa-calendar-o" aria-hidden="true"></i> Calendar</li></a>
       <a href="https://www.evernote.com/Home.action"><li><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Evernote</li></a>
       <a href="https://gmail.com/"><li><i class="fa fa-google" aria-hidden="true"></i> Gmail</li></a>
       <a href="https://trello.com/"><li><i class="fa fa-trello" aria-hidden="true"></i> Trello</li></a>
     </ul>
-    <h2>Social Media</h2>
+    <h2>social media</h2>
     <ul>
       <a href="https://tweetdeck.twitter.com/"><li><i class="fa fa-twitter" aria-hidden="true"></i> TweetDeck</li></a>
       <a href="https://facebook.com/"><li><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</li></a>
       <a href="https://xing.com/"><li><i class="fa fa-xing" aria-hidden="true"></i> Xing</li></a>
       <a href="https://linkedin.com/"><li><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</li></a>
     </ul>
-    <h2>Webdev</h2>
+    <h2>webdev</h2>
     <ul>
       <a href="https://github.com/"><li><i class="fa fa-github" aria-hidden="true"></i> GitHub</li></a>
       <a href="https://codepen.io"><li><i class="fa fa-codepen" aria-hidden="true"></i> Codepen</li></a>
-      <a href="https://www.reddit.com/r/webdev+web_design+css+devops+php+javascript+web_work+webhosting+freelance+html+html5+sass+angular2+digitalnomad+node+reactjs+reactnative+tinycode+learnjavascript+frontend/top/?sort=top&t=week"><li><i class="fa fa-reddit-alien" aria-hidden="true"></i> Multireddit</li></a>
+      <a href="https://www.reddit.com/r/Angular2+Frontend+HTML+PHP+Sass+css+devops+digitalnomad+freelance+html5+javascript+learnjavascript+node+reactjs+reactnative+tinycode+userexperience+web_design+web_work+webdev+webhosting/top/?sort=top&t=day"><li><i class="fa fa-reddit-alien" aria-hidden="true"></i> Multireddit</li></a>
     </ul>
-    <h2>Entertainment</h2>
+    <h2>entertainment</h2>
     <ul>
       <a href="https://youtube.com/"><li><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</li></a>
       <a href="https://play.spotify.com/browse"><li><i class="fa fa-spotify" aria-hidden="true"></i> Spotify</li></a>
       <a href="https://www.twitch.tv/directory/game/Creative/all"><li><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</li></a>
     </ul>
-    <h2>Tools</h2>
+    <h2>tools</h2>
     <ul>
-      <a href="https://web.skype.com/"><li><i class="fa fa-skype" aria-hidden="true"></i> Skype</li></a>
+			<a href="https://web.skype.com/"><li><i class="fa fa-skype" aria-hidden="true"></i> Skype</li></a>
+			<a href="https://stackoverflow.com/"><li><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</li></a>
+			<a href="https://slack.com/"><li><i class="fa fa-slack" aria-hidden="true"></i> Slack</li></a>
     </ul>
   </div>
 </div>
