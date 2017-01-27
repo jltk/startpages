@@ -25,7 +25,7 @@
     function getTime(){
       var t=new Date(),nhour=t.getHours(),nmin=t.getMinutes();
       if(nmin<=9) nmin="0"+nmin;
-document.getElementById('clock').innerHTML=""+nhour+":"+nmin+"";
+      document.getElementById('clock').innerHTML=""+nhour+":"+nmin+"";
     }
     window.onload=function(){
       getTime();
