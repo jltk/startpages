@@ -59,9 +59,9 @@
     .box-item {
       margin: 24px;
       width: 240px;
+      text-align: center;
     }
     .item-heading {
-      text-align: center;
       border-top: 6px solid rgba(159,23,73,0.1);
       border-right: 6px solid rgba(159,23,73,0.1);
       border-left: 6px solid rgba(159,23,73,0.1);
@@ -81,11 +81,10 @@
     li {
       padding: 10px 0;
       font-size: 1em;
-      text-align: center;
-      font-weight: 300;
+      font-weight: normal;
       list-style: none;
     }
-    li a {
+    li a, a:link, a:visited, a:focus {
       color: white;
       text-decoration: none;
       cursor: pointer;
@@ -94,14 +93,15 @@
       color: #F1C1CF;
       cursor: pointer;
       font-weight: 700;
+      text-decoration: none;
     }
     #clock {
       position: fixed;
       font-family: 'Verdana', sans-serif;
-      top: 10px;
+      bottom: 10px;
       right: 10px;
       font-size: .62em;
-      color: rgb(179,54,94);
+      color: rgb(247,194,54);
     }
   </style>
 </head>
