@@ -1,50 +1,46 @@
-<!--
-	The box has a fixed size so far, but is somewhat responsive. Although if you wanna add more link columns, you'll need to adjust the box widths appropiatly.
-
-	Uses Flexbox. Doesn't run with some older browsers like < IE11.
-
--->
 <!DOCTYPE html>
 <html>
-
 <head>
+	<link rel="icon" href="favicon.ico">
+    <!--
+            .---------------.
+          /MMMMMMMdbMMMMMMMM\
+          /MMMMMMMdbMMMMMMMM\
+          /MMMMMMMdbMMMMMMMM\
+            /MMMMMMdbMMMMMMMM\
+            /MMMMMMdbMMMMMMM\
+            /MMMMMMbdMMMMMMM\
+    /MMMM   MMMMMMMb dMMMMMMM. ,MM
+    /MMMM  MMMMMMMMb dMMMMMMMM\ `MM
+    .MMMMMMMMMMMMMM`  `\MMMMMMM.MMb
+      `MMMMMMMMMM´       `MMMMMMMb
+      `--------´         `------´
+
+      author: github.com/jnsltk
+
+    -->
 	<title>
 		Frontpage 🍙
 	</title>
-
-	<!--
-	        .---------------.
-	       /MMMMMMMdbMMMMMMMM\
-	       /MMMMMMMdbMMMMMMMM\
-	       /MMMMMMMdbMMMMMMMM\
-	        /MMMMMMdbMMMMMMMM\
-	        /MMMMMMdbMMMMMMM\
-	        /MMMMMMbdMMMMMMM\
-	/MMMM   MMMMMMMb dMMMMMMM. ,MM
-	/MMMM  MMMMMMMMb dMMMMMMMM\ `MM
-	.MMMMMMMMMMMMMM`  `\MMMMMMM.MMb
-	  `MMMMMMMMMM´       `MMMMMMMb
-	   `--------´         `------´
-	-->
-
-	<!-- META -->
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1.0">
-	<link rel="shortcut icon" href="favicon.png">
-
 	<style>
-		@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
-		@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 		body {
 			background: #FB7D79;
-			font-family: 'Roboto';
+			font-family: 'Helvetica', sans-serif;
 			color: white;
-			}
-		body::after {
+			width: 100%;
+			min-height: 100vh;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		body:after {
 			content: "";
 			background: url('http://i.imgur.com/StzzYPF.jpg');
-			background-repeat: no-repeat;
+			background-position: center;
 			background-size: cover;
+			background-attachment: fixed;
 			opacity: 0.12;
 			top: 0;
 			left: 0;
@@ -55,27 +51,22 @@
 		}
 		h1 {
 			font-size: 3.4em;
-			font-weight: 200;
-			font-family: 'Noto Sans Japanese', serif;
 			text-align: center;
-			margin: 0;
-			margin-top: 20px;
+			margin: 20px 0 0 0;
 			padding: 0;
-			text-transform: uppercase;}
+		}
 		h2 {
 			font-size: 1.3em;
 		}
 		ul {
 			list-style: none;
-			-webkit-flex: 1 auto;
 			flex: 1 auto;
 		}
 		li {
 			font-size: 1.1em;
-			font-weight: 300;
 			margin: 12px 0;
 		}
-		a:link, a:visited, a:focus {
+		a, a:link, a:visited, a:focus {
 			color: white;
 			text-decoration: none;
 		}
@@ -85,95 +76,78 @@
 			border-bottom: 1px dotted #816F90;
 		}
 		.box {
-			margin-top: 0px;
-			display: -webkit-flex;
 			display: flex;
-			-webkit-flex-flow: row wrap;
 			flex-flow: row wrap;
 		}
-		.wrapper {
-			margin: auto;
+		.container {
 			width: 800px;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			bottom: 0;
-			height: 530px;
 			border: 1px solid rgba(255,255,255,0.41);
-			background: rgba(255,255,255,0.11);}
+			background: rgba(255,255,255,0.11);
+		}
 		@media only screen and (max-width: 840px) {
 			h1 {
 				font-size: 2.5em;
 			}
-			.wrapper {
+			.container {
 				width: 462px;
-				height: 833px;
 				margin-top: 30px;
 				margin-bottom: 30px;
 			}
-			body::after {
+			body:after {
 				background: url('http://i.imgur.com/dI1EURb.jpg');
-				background-size: 100% 100%;
-				height: 800px;
-		}
+			}
 		}
 	</style>
 
 </head>
 <body>
-	
-	<div class="main">
-		<div class="wrapper">
-			<h1>猿も木から落ちる。</h1>
-			<div class="box">
-				<ul>
-					<li><h2>Information</h2></li>
-					<li><a href="https://www.w3.org/" target="_blank">W3C</a></li>
-					<li><a href="https://reddit.com/" target="_blank">Reddit</a>
-						<ul>
-							<li><a href="https://www.reddit.com/r/webdev+web_design+css+devops+php+javascript+web_work+webhosting+freelance+html+html5+sass+angular2+digitalnomad/top/?sort=top&t=week" target="_blank">/webdev/</a></li>
-							<li><a href="https://www.reddit.com/r/news+worldnews+technology+futurology+science+politics+upliftingnews+de+socialism+CapitalismVSocialism+communism/top/?sort=top&t=day" target="_blank">/news/</a></li>
-							<li><a href="https://www.reddit.com/r/mindfulness+getdisciplined+discipline+getmotivated+theredpill+selfimprovement+becomeaman+meditation+asktrp+stoicism/top/" target="_blank">/motivational/</a></li>
-						</ul>
-					</li>
-					<li><a href="https://4chan.org/" target="_blank">4chan</a>
+	<base target="_blank"> <!-- opens all links in a new window -->
+	<div class="container">
+		<h1>猿も木から落ちる。</h1>
+		<div class="box">
+			<ul>
+				<li><h2>Information</h2></li>
+				<li><a href="https://www.w3.org/">W3C</a></li>
+				<li><a href="https://reddit.com/">Reddit</a>
 					<ul>
-						<li><a href="https://boards.4chan.org/g/catalog" target="_blank">/g/</a></li>
-						<li><a href="https://boards.4chan.org/gd/catalog" target="_blank">/gd/</a></li>
-						</ul>
-					</li>
-					<li><a href="https://getpocket.com/a/queue/list/" target="_blank">Pocket</a></li>
-				</ul>
-				<ul>
-					<li><h2>Organisation</h2></li>
-					<li><a href="https://github.com" target="_blank">GitHub</a></li>
-					<li><a href="https://www.evernote.com/Home.action" target="_blank">Evernote</a></li>
-					<li><a href="https://trello.com" target="_blank">Trello</a></li>
-					<li><a href="https://gmail.com/" target="_blank">Gmail</a></li>
-					<li><a href="https://calendar.google.com/calendar/render#main_7" target="_blank">Calendar</a></li>
-					<li><h2>Other Tools</h2></li>
-					<li><a href="https://www.duolingo.com/" target="_blank">Duolingo</a></li>
-					<li><a href="https://jakearchibald.github.io/svgomg/" target="_blank">Codepen</a></li>
-					<li><a href="https://web.skype.com/" target="_blank">Skype</a></li>
-					
-				</ul>
-				<ul>
+						<li><a href="https://www.reddit.com/r/webdev+web_design+css+devops+php+javascript+web_work+webhosting+freelance+html+html5+sass+angular2+digitalnomad/top/?sort=top&t=week">/webdev/</a></li>
+						<li><a href="https://www.reddit.com/r/news+worldnews+technology+futurology+science+politics+upliftingnews+de+socialism+CapitalismVSocialism+communism/top/?sort=top&t=day">/news/</a></li>
+						<li><a href="https://www.reddit.com/r/mindfulness+getdisciplined+discipline+getmotivated+theredpill+selfimprovement+becomeaman+meditation+asktrp+stoicism/top/">/motivational/</a></li>
+					</ul>
+				</li>
+				<li><a href="https://4chan.org/">4chan</a>
+					<ul>
+						<li><a href="https://boards.4chan.org/g/catalog">/g/</a></li>
+						<li><a href="https://boards.4chan.org/gd/catalog">/gd/</a></li>
+					</ul>
+				</li>
+				<li><a href="https://getpocket.com/a/queue/list/">Pocket</a></li>
+			</ul>
+			<ul>
+				<li><h2>Organisation</h2></li>
+				<li><a href="https://github.com">GitHub</a></li>
+				<li><a href="https://www.evernote.com/Home.action">Evernote</a></li>
+				<li><a href="https://trello.com">Trello</a></li>
+				<li><a href="https://gmail.com/">Gmail</a></li>
+				<li><a href="https://calendar.google.com/calendar/render#main_7">Calendar</a></li>
+				<li><h2>Other Tools</h2></li>
+				<li><a href="https://www.duolingo.com/">Duolingo</a></li>
+				<li><a href="https://jakearchibald.github.io/svgomg/">Codepen</a></li>
+				<li><a href="https://web.skype.com/">Skype</a></li>
+			</ul>
+			<ul>
 				<li><h2>Social Media</h2></li>
-					<li><a href="https://xing.com" target="_blank">XING</a></li>
-					<li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
-					<li><a href="https://tweetdeck.twitter.com/" target="_blank">TweetDeck</a></li>
-					<li><a href="https://behance.net" target="_blank">Behancé</a></li>
-					<li><h2>Entertainment</h2></li>
-                    <li><a href="https://play.spotify.com/browse" target="_blank">Spotify</a></li>
-					<li><a href="https://www.twitch.tv/directory/game/Creative/all" target="_blank">Twitch.tv</a></li>
-					<li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-					<li><a href="http://www.colourlovers.com/" target="_blank">Colourlovers</a></li>
-				</ul>
-			</div>
-
+				<li><a href="https://xing.com">XING</a></li>
+				<li><a href="https://linkedin.com/">LinkedIn</a></li>
+				<li><a href="https://tweetdeck.twitter.com/">TweetDeck</a></li>
+				<li><a href="https://behance.net">Behancé</a></li>
+				<li><h2>Entertainment</h2></li>
+                <li><a href="https://play.spotify.com/browse">Spotify</a></li>
+				<li><a href="https://www.twitch.tv/directory/game/Creative/all">Twitch.tv</a></li>
+				<li><a href="https://youtube.com">YouTube</a></li>
+				<li><a href="http://www.colourlovers.com/">Colourlovers</a></li>
+			</ul>
 		</div>
 	</div>
-
 </body>
 </html>
