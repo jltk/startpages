@@ -2,7 +2,7 @@
 
 My browser startpages. CSS and JS are all included in one HTML file each.
 
-Google fonts need to be uncommented to be used.
+Google fonts are commented out by default.
 
 ### Startpage Too Simple
 
