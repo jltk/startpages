@@ -16,4 +16,4 @@ For icons to work requires [fontawesome.io](http://fontawesome.io). Just copy `f
 
 ### Startpage Boxes
 
-![too simple startpage scrot](https://my.mixtape.moe/aoynqx.png)
+![boxes startpage scrot](https://my.mixtape.moe/uivqmd.png)
