@@ -2,12 +2,13 @@
 
 My browser startpages. CSS and JS are all included in one HTML file each.
 
+Google fonts need to be uncommented to be used.
+
 ### Startpage Too Simple
 
 For icons to work requires [fontawesome.io](http://fontawesome.io). Just copy `fonts` and `css` folders into the same directory as the html file.
 
-<img src="https://i.imgur.com/j98eWzJ.png" border="0" />
-— <a href="https://i.imgur.com/LmgkQOe.jpg" target="_blank">Wallpaper</a>
+![too simple startpage scrot](https://my.mixtape.moe/huhzke.png)
 
 ### Startpage Taidy
 
