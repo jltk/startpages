@@ -8,12 +8,12 @@ Google fonts are commented out by default.
 
 For icons to work requires [fontawesome.io](http://fontawesome.io). Just copy `fonts` and `css` folders into the same directory as the html file.
 
-![too simple startpage scrot](https://my.mixtape.moe/unixdf.png)
+![too simple startpage scrot](https://u.teknik.io/BiV9U.png)
 
 ### Startpage Taidy
 
-![taidy startpage scrot](https://my.mixtape.moe/dueodj.png)
+![taidy startpage scrot](https://u.teknik.io/mZatF.png)
 
 ### Startpage Boxes
 
-![boxes startpage scrot](https://my.mixtape.moe/uivqmd.png)
+![boxes startpage scrot](https://u.teknik.io/mV5l0.png)
