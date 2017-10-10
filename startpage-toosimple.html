@@ -49,7 +49,8 @@
 		width: 100%;
 		min-height: 100vh;
 		margin: 0;
-		padding: 0;
+		padding: 8px;
+		box-sizing: border-box;
 	}
 	body {
 		font-family: 'Lato', sans-serif;
@@ -60,6 +61,7 @@
 		align-items: center;
 		background-image: linear-gradient(70deg, rgba(53,60,88,.75), rgba(55,191,141,.75)), url('https://i.imgur.com/L4jWBu7.jpg');
 		/* background-size: cover; */ /* To display wallpaper at full screen size */
+		background-attachment: fixed;
 	}
 	h2 {
 		color: rgba(53,60,88, 0.3);
@@ -67,6 +69,7 @@
 	}
 	ul {
 		list-style: none;
+
 		margin: 0;
 		padding: 0;
 		min-width: 435px;
@@ -88,11 +91,19 @@
 	i {
 		padding-right: 5px;
 	}
+	@media only screen and (max-width: 840px) {
+		body {
+			background-position: top center;
+		}
+		ul {
+			width: 100%;
+			min-width: 200px;
+		}
+	}
 	</style>
 	<base target="_blank"> <!-- Opens all links in a new window -->
 </head>
 <body>
-<div style="display:flex; justify-content:center; align-items:center;">
   <div class="wrapper">
     <h2>news</h2>
     <ul>
@@ -133,6 +144,5 @@
 			<a href="https://slack.com/"><li><i class="fa fa-slack" aria-hidden="true"></i> Slack</li></a>
     </ul>
   </div>
-</div>
 </body>
 </html>
