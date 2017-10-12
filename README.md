@@ -1,10 +1,9 @@
 # Startpages 
 
-Responsive browser startpages.
+Responsive browser startpages using HTML and CSS.
 
 ### Startpage Too Simple
-
-For icons requires [fontawesome.io](http://fontawesome.io). Copy `fonts` and `css` folders into the same directory as the html file.
+Icons require [fontawesome.io](http://fontawesome.io). Copy `fonts` and `css` folders into the same directory as the HTML file.
 
 ![too simple startpage scrot](https://u.teknik.io/BiV9U.png)
 
