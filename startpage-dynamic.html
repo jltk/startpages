@@ -78,17 +78,17 @@
         }
         button, input {
             outline: 0;
+            border: 0;
+            padding: 0;
         }
         .remove {
             color: #704053;
             background: #dc578c;
-            display: flex;
             width: 21px;
-            height: 21px;
+            height: 18px;
             border-radius: 21px;
             font-size: 9px;
             margin-left: 4px;
-            border: none;
         }
         .remove:hover {
             color: #ffffff;
@@ -107,6 +107,7 @@
             border: none;
             background: #5ed69c;
             color: rgba(38,149,97,1);
+            font-size: 12px;
         }
         #panel input {
             padding: 0;
@@ -115,6 +116,7 @@
             padding-left: 6px;
             color: #ffffff;
             background: rgba(40,40,55,.5);
+            box-shadow: inset 0 0 0 2px rgba(40,40,55,.6);
         }
         /* a little bit of input ux */
         #panel button:hover {
@@ -124,26 +126,25 @@
             border: 2px solid #35483f;
         }
         #panel input:focus {
-            outline: 2px solid #5ed69c;
-            outline-offset: -2px;
+            box-shadow: inset 0 0 0 2px #5ed69c;
         }
-        #panel input:focus ~ button {
-            border: 2px solid #ffffff;
+        #panel input:valid ~ button {
+            box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
         }
         #panel input:valid {
-            outline: 2px solid #ffffff;
+            box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
         }
         #panel input:valid ~ button {
             color: white;
         }
         #panel input:invalid ~ button {
-            border: 2px solid rgba(40,40,55,.6);
+            box-shadow: inset 0 0 0 2px rgba(40,40,55,.6);
         }
         #panel input:invalid ~ button:hover {
             color: rgba(38,149,97,1);
         }
         #panel input:required {
-            box-shadow: inset 0 0 0 2px rgba(40,40,55,.5);
+            box-shadow: 0;
         }
     </style>
 </head>
@@ -153,7 +154,7 @@
         <div class="box" id="links"></div>
         <div class="hide" id="panel">
             <input id="urlInput" placeholder="link" required>
-            <button id="addUrl">+</button>
+            <button id="addUrl">➕</button>
         </div>
         <div class="btnAdd" id="btnToggle">
             <svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.6 26.6">
