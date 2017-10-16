@@ -3,7 +3,7 @@
 Responsive browser startpages using HTML, CSS and JS.
 
 ### Startpage Dynamic
-No dependencies. Using [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Work in progress. Requires `js/startpage-dynamic.js`. [Video](https://u.teknik.io/vPET6.ogv).
+No dependencies. Using [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API). Work in progress. Requires `js/startpage-dynamic.js`. [Video](https://u.teknik.io/1vwbH.ogv).
 
 ![dynamic startpage scrot](https://u.teknik.io/yexB0.png)
 
