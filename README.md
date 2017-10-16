@@ -7,8 +7,6 @@ No dependencies. Using [localStorage](https://developer.mozilla.org/en-US/docs/W
 
 ![dynamic startpage scrot](https://u.teknik.io/yexB0.png)
 
-![dynamic startpage delete link gif](https://u.teknik.io/Z5i7V.gif)
-
 ### Startpage Too Simple
 Icons require [fontawesome.io](http://fontawesome.io). Copy `fonts` and `css` folders into the same directory as the HTML file.
 
