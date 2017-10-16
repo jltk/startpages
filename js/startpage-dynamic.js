@@ -60,7 +60,7 @@
                 };
             });
         },
-        testBae: function() {
+        btnCloseVis: function() {
             for (i=0; i<toggleMenu.btnClose.length; i++) {
                 if (toggleMenu.btnClose[i].style.display = "block") {
                     toggleMenu.btnClose[i].style.display = "none";
@@ -71,12 +71,6 @@
         }
     };
     toggleMenu.btnClick();
-    document.onload = toggleMenu.testBae();
-
-    // editable headlines
-    var headLines = {
-
-    };
+    document.onload = toggleMenu.btnCloseVis();
+    // todo: editable headlines for boxes, addable boxes
 })();
-
-// todo: editable box headlines in edit mode
